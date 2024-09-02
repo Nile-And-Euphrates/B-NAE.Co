@@ -1,11 +1,9 @@
-from django.shortcuts import render
+
 from rest_framework.decorators  import api_view
 from django.http.response import JsonResponse 
 from .models import Product
 from .seriallizers import ProductSerializer
 from rest_framework.response import Response  
-from rest_framework import status , filters
-from rest_framework.views import APIView
 from django.http import Http404
 from rest_framework import mixins , generics , viewsets
 from rest_framework.authentication import BasicAuthentication, TokenAuthentication
