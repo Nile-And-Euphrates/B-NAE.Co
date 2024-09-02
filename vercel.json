@@ -2,7 +2,10 @@
     "builds":[{
         "src":"core/wsgi.py",
         "use":"@vercel/python",
-        "config":{"runtime":"python3.9"}
+        "config":{
+            "maxLambdasize": "100mb",
+            "runtime":"python3.9"
+        }
     }],
     "routes":[
         {
